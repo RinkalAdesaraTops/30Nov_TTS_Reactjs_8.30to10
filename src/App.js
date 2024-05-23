@@ -9,6 +9,9 @@ import { Home } from './Components/Home';
 import { About } from './Components/About';
 import { Menu } from './Components/Menu';
 import { Contact } from './Components/Contact';
+import Stylecomponent from './Components/Stylecomponent';
+import LifecycleClass from './Components/LifecycleClass';
+import LifecycleFunction from './Components/LifecycleFunction';
 
 
 function App() {
@@ -26,6 +29,9 @@ function App() {
           <Route path='/home' element={<Home />}></Route>
           <Route path='/about' element={<About />}></Route>
           <Route path='/contact' element={<Contact />}></Route>
+          <Route path='/styled' element={<Stylecomponent />}></Route>
+          <Route path='/lifecycleclass' element={<LifecycleClass />}></Route>
+          <Route path='/lifecyclefunc' element={<LifecycleFunction />}></Route>
           {/* <Route path='/contact' element={<Contact />}></Route> */}
       </Routes>
       </BrowserRouter>

@@ -16,6 +16,9 @@ export const Menu = () => {
             <Nav.Link href="/home">Home</Nav.Link>
             <Nav.Link href="/about">About</Nav.Link>
             <Nav.Link href="/contact">Contact</Nav.Link>
+            <Nav.Link href="/styled">StyleComponent</Nav.Link>
+            <Nav.Link href="/lifecycleclass">Lifecyle-Classbased</Nav.Link>
+            <Nav.Link href="/lifecyclefunc">Lifecyle-Funcbased</Nav.Link>
             
           </Nav>
         </Navbar.Collapse>
