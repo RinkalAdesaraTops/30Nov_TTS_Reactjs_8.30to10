@@ -5,6 +5,7 @@ import './App.css'
 import Compnent1 from './Components/Compnent1'
 import ContextExample from './Components/ContextExample'
 import Counter from './Components/Counter'
+import UsememoExample from './Components/UsememoExample'
 
 function App() {
   
@@ -15,7 +16,8 @@ function App() {
       <hr />
       {/* <ContextExample name="Testing"/> */}
       <hr />
-      <Counter />
+      {/* <Counter /> */}
+      <UsememoExample />
     </>
   )
 }
