@@ -1,11 +1,21 @@
-import React,{useState  } from 'react'
+import React,{useMemo, useState  } from 'react'
 
 const UsememoExample = () => {
     const [name,setName] = useState("")
     const [age,setAge] = useState("")
     const [id,setId] = useState("")
+    const [count,setCount] = useState(0)
     const [data,setData] = useState([])
     //Insert
+    //Freeze value - memoized value - UseMemo Hooks
+    //Freeze Function - memoized Function - useCallback Hooks
+    const calcNumber = (count)=>{
+        for(let i=0;i<1000000000;i++){
+            count += 1;
+        }
+        return count;
+    }
+    const callFunc = useMemo(()=>calcNumber(count),[count])
     const saveData = ()=>{
         setData([
             ...data,{
@@ -43,6 +53,9 @@ const UsememoExample = () => {
         })
         setData(data1)
     }
+    const addCounter = ()=>{
+        setCount(count+1)
+    }
   return (
     <>
     <div>
@@ -73,6 +86,10 @@ const UsememoExample = () => {
             })
         }
     </table>
+
+    <h3>Counter is -- {count}</h3>
+    <button onClick={addCounter}>Add Count</button>
+    <h3>Value is -- {callFunc}</h3>
     </>
   )
 }

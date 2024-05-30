@@ -6,6 +6,7 @@ import Compnent1 from './Components/Compnent1'
 import ContextExample from './Components/ContextExample'
 import Counter from './Components/Counter'
 import UsememoExample from './Components/UsememoExample'
+import CRUDExample from './Components/CRUDExample'
 
 function App() {
   
@@ -16,8 +17,9 @@ function App() {
       <hr />
       {/* <ContextExample name="Testing"/> */}
       <hr />
-      {/* <Counter /> */}
-      <UsememoExample />
+      <Counter />
+      {/* <UsememoExample /> */}
+      {/* <CRUDExample /> */}
     </>
   )
 }
