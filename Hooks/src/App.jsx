@@ -7,17 +7,21 @@ import ContextExample from './Components/ContextExample'
 import Counter from './Components/Counter'
 import UsememoExample from './Components/UsememoExample'
 import CRUDExample from './Components/CRUDExample'
+import CRUDRepeat from './Components/CRUDRepeat'
+import UseCallback from './Components/UseCallback'
 
 function App() {
   
   return (
     <>
       <h3>My First React + Vite Project</h3>
+      {/* <CRUDRepeat /> */}
+      <UseCallback />
       {/* <Compnent1 name="Testing"/> */}
       <hr />
       {/* <ContextExample name="Testing"/> */}
       <hr />
-      <Counter />
+      {/* <Counter /> */}
       {/* <UsememoExample /> */}
       {/* <CRUDExample /> */}
     </>
