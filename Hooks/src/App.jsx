@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { Suspense, lazy, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -9,6 +9,13 @@ import UsememoExample from './Components/UsememoExample'
 import CRUDExample from './Components/CRUDExample'
 import CRUDRepeat from './Components/CRUDRepeat'
 import UseCallback from './Components/UseCallback'
+import AxiosApi from './Components/AxiosApi'
+const ApiComponent = lazy(()=>import('./Components/ApiComponent'))
+// import ApiComponent from './Components/ApiComponent'
+// import Home from './Components/Home'
+const Home = lazy(()=>import('./Components/Home'))
+const Contact = lazy(()=>import('./Components/Contact'))
+// import Contact from './Components/Contact'
 
 function App() {
   
@@ -16,7 +23,7 @@ function App() {
     <>
       <h3>My First React + Vite Project</h3>
       {/* <CRUDRepeat /> */}
-      <UseCallback />
+      {/* <UseCallback /> */}
       {/* <Compnent1 name="Testing"/> */}
       <hr />
       {/* <ContextExample name="Testing"/> */}
@@ -24,6 +31,17 @@ function App() {
       {/* <Counter /> */}
       {/* <UsememoExample /> */}
       {/* <CRUDExample /> */}
+      
+      {/* <Suspense fallback={(<div>Api is calling.....</div>)}>
+        <ApiComponent />
+      </Suspense>
+      <Suspense fallback={(<div>Plz Wait.....</div>)}>
+        <Contact />
+      </Suspense>
+      <Suspense fallback={<div>Home is loading.....</div>}>
+        <Home />
+      </Suspense> */}
+      <AxiosApi />
     </>
   )
 }
