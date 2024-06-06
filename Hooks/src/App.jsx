@@ -10,6 +10,7 @@ import CRUDExample from './Components/CRUDExample'
 import CRUDRepeat from './Components/CRUDRepeat'
 import UseCallback from './Components/UseCallback'
 import AxiosApi from './Components/AxiosApi'
+import JsonserverCrud from './Components/JsonserverCrud'
 const ApiComponent = lazy(()=>import('./Components/ApiComponent'))
 // import ApiComponent from './Components/ApiComponent'
 // import Home from './Components/Home'
@@ -41,7 +42,8 @@ function App() {
       <Suspense fallback={<div>Home is loading.....</div>}>
         <Home />
       </Suspense> */}
-      <AxiosApi />
+      {/* <AxiosApi /> */}
+      <JsonserverCrud />
     </>
   )
 }
