@@ -43,7 +43,8 @@ function App() {
         <Home />
       </Suspense> */}
       {/* <AxiosApi /> */}
-      <JsonserverCrud />
+      <ApiComponent />
+      {/* <JsonserverCrud /> */}
     </>
   )
 }
